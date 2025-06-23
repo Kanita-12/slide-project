@@ -1,0 +1,2173 @@
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: #0e0e0e;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    max-width: 1200px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 999;
+    border-radius: 0.5rem;
+    background: rgba(53, 63, 62, 0.219);
+    backdrop-filter: blur(5px);
+}
+
+header .logo {
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.445) 40%, #ffffffb9 80%);
+}
+
+
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+/* theme navbar */
+header nav a.tohka {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.tohka:hover {
+    color: #e17fff;
+}
+
+header nav a.yoshino {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.yoshino:hover {
+    color: #bae8f9;
+}
+
+header nav a.kurumi {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.kurumi:hover {
+    color: #d6001c;
+}
+
+header nav a.kotori {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.kotori:hover {
+    color: #ff3e57;
+}
+
+header nav a.yamai {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.yamai:hover {
+    color: #ff6b00;
+}
+
+header nav a.miku {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.miku:hover {
+    color: #6d4aff;
+}
+
+header nav a.natsumi {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.natsumi:hover {
+    color: #26fa0a ;
+}
+
+header nav a.origami {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.origami:hover {
+    color: #23a7ff;
+}
+
+header nav a.nia {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.nia:hover {
+    color: #23a7ff;
+}
+
+header nav a.mukuro {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.mukuro:hover {
+    color: #fcf950;
+}
+
+header nav a.mio {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffdd;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+header nav a.mio:hover {
+    color: #36d7ff;
+}
+
+
+.slider {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-top: -60px;
+    overflow: hidden;
+}
+
+.slider .list .item .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+
+
+/* tohka-thems */
+
+.slider .list .item.tohka {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.tohka > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .list .item.tohka .detail {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+}
+
+.slider .list .item.tohka .detail .title .logo {
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.tohka .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #f5cfff 20%, #c048ec 60%,  #8626d9 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.tohka .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.tohka .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.tohka .detail figure img {
+    width: 32%;
+}
+
+.slider .list .item.tohka .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.tohka .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.tohka .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #e431bd65;
+    color: #fcfcfc;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.tohka .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.tohka .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.tohka .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.tohka .detail figure img {
+        width: 50%;
+    }
+}
+
+/* yoshino-themes */
+
+.slider .list .item.yoshino {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.yoshino > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.yoshino .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.yoshino .detail .title .logo {
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.yoshino .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #99f78c 30%, #bae8f9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.yoshino .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.yoshino .detail figure {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.yoshino .detail figure img {
+    width: 25%;
+}
+
+.slider .list .item.yoshino .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.yoshino .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.yoshino .detail .more {
+    display: inline-block;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #1dd89a79;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.yoshino .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.yoshino .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.yoshino .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.yoshino .detail figure img {
+        width: 50%;
+    }
+}
+
+/* kurumi-themes */
+
+.slider .list .item.kurumi {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.kurumi > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.kurumi .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.kurumi .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.slider .list .item.kurumi .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #0a0a1d 10%, #600000 35%, #a00010 65%, #d6001c 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.kurumi .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.kurumi .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.kurumi .detail figure img {
+    width: 25%;
+}
+
+.slider .list .item.kurumi .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.kurumi .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.kurumi .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #ff000065;
+    color: #fffffffd;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.kurumi .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.kurumi .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.kurumi .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.kurumi .detail figure img {
+        width: 50%;
+    }
+}
+
+/* kotori-themes */
+
+.slider .list .item.kotori {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.kotori > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.kotori .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.kotori .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.kotori .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #ffe3e3 10%, #ff6b81 45%, #ff3e57 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.kotori .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.kotori .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.kotori .detail figure img {
+    width: 38%;
+}
+
+.slider .list .item.kotori .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.kotori .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.kotori .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #ff6b8181;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.kotori .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.kotori .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.kotori .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.kotori .detail figure img {
+        width: 50%;
+    }
+}
+
+/* yamai-themes */
+
+.slider .list .item.yamai {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.yamai > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.yamai .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+    
+}
+
+.slider .list .item.yamai .detail .title{
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider .list .item.yamai .detail .title .logo {
+    height: 3.5rem;
+    margin-bottom: 0.rem;
+}
+
+.slider .list .item.yamai .detail .twinName{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider .list .item.yamai .detail .twinName .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #ffe29a, #ffb347, #ff9248, #ff6b00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+
+.slider .list .item.yamai .detail .twinName .name .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    color: white;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+}
+
+.slider .list .item.yamai .detail .twinName .name .nameJp2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    color: white;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: end;
+}
+
+.slider .list .item.yamai .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.yamai .detail .twins{
+    width: 100%;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 10rem;
+}
+.slider .list .item.yamai .detail .twins .twinYuzuru{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+.slider .list .item.yamai .detail .twins .twinYuzuru img{
+    width: 80%;
+    transform: translateX(-30%);
+}
+.slider .list .item.yamai .detail .twins .twinKaguya{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.slider .list .item.yamai .detail .twins .twinKaguya img{
+    width: 56.3%;
+    transform: translateY(-5%);
+}
+
+
+.slider .list .item.yamai .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.yamai .detail .caption{
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+     display: flex;
+     justify-content: center;
+}
+
+.slider .list .item.yamai .detail .caption .desk {
+    max-width: 40rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;;
+     line-height: 1.6rem;
+     font-size: 1rem;
+     font-weight: 200;
+}
+
+.slider .list .item.yamai .detail .tombol{
+    width: 100%;
+    display: flex; 
+    justify-content:center;
+}
+
+.slider .list .item.yamai .detail .tombol .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #d6b21281;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.yamai .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+
+}
+
+@media (max-width: 768px) {
+    header, .slider .list .item.yamai .detail {
+      padding: 1rem;
+    }
+  
+    .slider .list .item.yamai .detail .twinName .name {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      text-align: center;
+    }
+  
+    .slider .list .item.yamai .detail .twinName .name .nameJp,
+    .slider .list .item.yamai .detail .twinName .name .nameJp2 {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      text-align: center;
+    }
+  
+    .slider .list .item.yamai .detail .twins {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 5rem;
+      }
+    
+      .slider .list .item.yamai .detail .twins .twinYuzuru img,
+      .slider .list .item.yamai .detail .twins .twinKaguya img {
+        width: 70%;
+        transform: none;
+        object-fit: contain;
+        align-self: center;
+      }
+    
+      .slider .list .item.yamai .detail .twins .twinYuzuru,
+      .slider .list .item.yamai .detail .twins .twinKaguya {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+  
+
+/* miku-themes */
+
+.slider .list .item.miku {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.miku > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.miku .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.miku .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.miku .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #daf6ff 5%, #91d3f8 35%, #5088f0 65%, #6d4aff 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.miku .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.miku .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.miku .detail figure img {
+    width: 25%;
+}
+
+.slider .list .item.miku .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.miku .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.miku .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #5088f08a;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.miku .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.miku .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.miku .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.miku .detail figure img {
+        width: 50%;
+    }
+}
+
+
+/* natsumi-themes */
+
+.slider .list .item.natsumi {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.natsumi > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.natsumi .detail {
+    align-items: end;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.natsumi .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.natsumi .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #daf6ff 5%, #0cebc5 35%, #0cebc5 65%, #26fa0a 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.natsumi .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.natsumi .detail figure {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.natsumi .detail figure img {
+    width: 37%;
+}
+
+.slider .list .item.natsumi .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.natsumi .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.natsumi .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #0cebc66c;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.natsumi .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.natsumi .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.natsumi .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.natsumi .detail figure img {
+        width: 50%;
+    }
+}
+
+/* origami-themes */
+
+.slider .list .item.origami {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.origami > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.origami .detail {
+    align-items: end;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.origami .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.origami .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #daf6ff 5%, #6be6d1 35%, #70dac8 65%, #23a7ff 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.origami .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.origami .detail figure {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.origami .detail figure img {
+    width: 37%;
+}
+
+.slider .list .item.origami .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.origami .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.origami .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #2c15ff49;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.origami .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.origami .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.origami .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.origami .detail figure img {
+        width: 50%;
+    }
+}
+
+
+/* nia-themes */
+
+.slider .list .item.nia {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.nia > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.nia .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.nia .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.nia .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #daf6ff 5%, #6be6d1 35%, #70dac8 65%, #23a7ff 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.nia .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.nia .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.nia .detail figure img {
+    width: 35%;
+}
+
+.slider .list .item.nia .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.nia .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.nia .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #007c7649;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.nia .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.nia .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.nia .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.nia .detail figure img {
+        width: 50%;
+    }
+}
+
+
+/* Mukuro-themes */
+
+.slider .list .item.mukuro {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.mukuro > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.mukuro .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.mukuro .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.mukuro .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #daf6ff 5%, #d01cfd88  35%, #d01cfda9 65%, #fcf950 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.mukuro .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.mukuro .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.mukuro .detail figure img {
+    width: 30%;
+}
+
+.slider .list .item.mukuro .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.mukuro .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.mukuro .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #94920d57;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.mukuro .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.mukuro .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.mukuro .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.mukuro .detail figure img {
+        width: 50%;
+    }
+}
+
+
+/* Mio-themes */
+
+.slider .list .item.mio {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+}
+
+.slider .list .item.mio > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider .list .item.mio .detail {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    padding: 1rem;
+
+}
+
+.slider .list .item.mio .detail .title .logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider .list .item.mio .detail .name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    background: linear-gradient(270deg, #daf6ff 5%, #ffffff  35%, #89f7ff 65%, #36d7ff 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+.slider .list .item.mio .detail .nameJp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.slider .list .item.mio .detail figure {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider .list .item.mio .detail figure img {
+    width: 39%;
+}
+
+.slider .list .item.mio .detail figure figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e6e6e6;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: -1px 2px 4px rgba(0,0,0,1);
+}
+
+.slider .list .item.mio .detail .desk {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+
+.slider .list .item.mio .detail .more {
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #53e5ff57;
+    color: #ddddddb2;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 0.4rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.slider .list .item.mio .detail .more:hover {
+    background-color: #fffefe57;
+    color: #000000;
+}
+
+@media (max-width: 678px) {
+    header {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .slider .list .item.mio .detail {
+        padding: 1rem;
+    }
+    
+    .slider .list .item.mio .detail .name {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .slider .list .item.mio .detail figure img {
+        width: 50%;
+    }
+}
+
+/* Arrows */
+.arrows{
+    position: absolute;
+    top: 93%;
+    right: 70%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: transparent;
+    box-shadow: 1px 1px 1px black;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.arrows button:hover{
+    background-color: #0000007e;
+    color: white;
+}
+
+/* animation */
+@keyframes showDetail{
+    to{
+     transform: translateX(0);
+     filter: blur(0);
+     opacity: 1;
+    }
+ }
+ 
+/* Action NEXT */
+
+/* Slide masuk dari kanan */
+.slider.next .list .item:nth-child(1) > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    animation: slideInLeft 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    z-index: 2;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+ /* Action PREV */
+
+/* Slide keluar ke kanan */
+.slider.prev .list .item:nth-child(2) > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: slideOutRight 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    z-index: 1;
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+ .slider.next .arrows button,
+ .slider.prev .arrows button{
+    pointer-events: none;
+ }
+
+ /* start animation */
+.slider .list .item:nth-child(1){
+    z-index: 1;
+}
+.slider .list .item:nth-child(1) .title,
+.slider .list .item:nth-child(1) .twinName,
+.slider .list .item:nth-child(1) .name,
+.slider .list .item:nth-child(1) .nameJp,
+.slider .list .item:nth-child(1) figure,
+.slider .list .item:nth-child(1) .caption,
+.slider .list .item:nth-child(1) .desk,
+.slider .list .item:nth-child(1) .tombol,
+.slider .list .item:nth-child(1) .more{
+    transform: translateX(-150px);
+    filter: blur(50px);
+    opacity: 0;
+    animation: showDetail 0.5s 1s linear 1 forwards;
+}
+
+.slider .list .item:nth-child(1) .title{
+    animation-delay: 1s;
+}
+.slider .list .item:nth-child(1) .name{
+    animation-delay: 1.2s;
+}
+.slider .list .item:nth-child(1) .nameJp{
+    animation-delay: 1.4s;
+}
+.slider .list .item:nth-child(1) .twinName{
+    animation-delay: 1.4s;
+}
+.slider .list .item:nth-child(1) figure{
+    animation-delay: 1.6s;
+}
+.slider .list .item:nth-child(1) .desk{
+    animation-delay: 1.8s;
+}
+.slider .list .item:nth-child(1) .caption{
+    animation-delay: 1.8s;
+}
+.slider .list .item:nth-child(1) .more{
+    animation-delay: 2s;
+}
+.slider .list .item:nth-child(1) .tombol{
+    animation-delay: 2s;
+}
+
+.slider.prev .list .item:nth-child(2) .title,
+.slider.prev .list .item:nth-child(2) .name,
+.slider.prev .list .item:nth-child(2) .nameJp,
+.slider.prev .list .item:nth-child(2) figure,
+.slider.prev .list .item:nth-child(2) .desk,
+.slider.prev .list .item:nth-child(2) .more{
+    animation: hideDetail 0.5s 1s linear 1 forwards;
+}
+
+/* animation end*/
+
+ /* loading-bar theme */
+ .loading-bar.tohka {
+    width: 0%;
+    height: 5px;
+    background-color: #8626d9;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.tohka,
+.slider.slider.prev .loading-bar.tohka{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+
+
+.loading-bar.yoshino {
+    width: 0%;
+    height: 5px;
+    background-color: #99f78c;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.yoshino,
+.slider.slider.prev .loading-bar.yoshino{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.kurumi {
+    width: 0%;
+    height: 5px;
+    background-color: #d6001c;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.kurumi,
+.slider.slider.prev .loading-bar.kurumi{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.kotori {
+    width: 0%;
+    height: 5px;
+    background-color: #ff3e57;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.kotori,
+.slider.slider.prev .loading-bar.kotori{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.yamai {
+    width: 0%;
+    height: 5px;
+    background-color: #ff6b00;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.yamai,
+.slider.slider.prev .loading-bar.yamai{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.miku {
+    width: 0%;
+    height: 5px;
+    background-color: #6d4aff;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.miku,
+.slider.slider.prev .loading-bar.miku{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.natsumi {
+    width: 0%;
+    height: 5px;
+    background-color: #26fa0a;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.natsumi,
+.slider.slider.prev .loading-bar.natsumi{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.origami {
+    width: 0%;
+    height: 5px;
+    background-color: #23a7ff;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.origami,
+.slider.slider.prev .loading-bar.origami{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.nia {
+    width: 0%;
+    height: 5px;
+    background-color: #23a7ff;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.nia,
+.slider.slider.prev .loading-bar.nia{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.mukuro {
+    width: 0%;
+    height: 5px;
+    background-color: #fcf950 ;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.mukuro,
+.slider.slider.prev .loading-bar.mukuro{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+.loading-bar.mio {
+    width: 0%;
+    height: 5px;
+    background-color: #36d7ff;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+ }
+
+.slider.next .loading-bar.mio,
+.slider.slider.prev .loading-bar.mio{
+    width: 100%;
+    animation: loadingTime 2s linear 1 forwards;
+}
+
+@keyframes loadingTime{
+    to{
+        width: 0%;
+    }
+}
